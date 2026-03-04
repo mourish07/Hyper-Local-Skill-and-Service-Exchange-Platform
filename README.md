@@ -8,7 +8,7 @@ This platform allows people to offer their skills and request services from othe
 
 ## 🚀 Live Demo
 
-🔗 Live Link: (Coming Soon – Deployment in Progress)
+🔗 Live Link: https://hyper-local-skill-and-service-exchange-qr53.onrender.com/
 
 ---
 
