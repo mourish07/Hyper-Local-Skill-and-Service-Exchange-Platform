@@ -86,7 +86,7 @@ go1.24.13, GoArch: amd64
 Settings: 
 map[ha-connections:1 
 protocol:quic 
-url:http://localhost:5000]
+url:https://hyper-local-skill-and-service-exchange.onrender.com/]
 2026-02-14T04:59:57Z INF 
 Generated Connector ID: 22
 4b3081-e922-47f2-a344-1e71

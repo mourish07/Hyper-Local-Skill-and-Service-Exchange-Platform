@@ -100,7 +100,7 @@ npm start
 
 Server runs on:  
 ```
-http://localhost:5000
+https://hyper-local-skill-and-service-exchange.onrender.com/
 ```
 
 ---
@@ -117,8 +117,7 @@ npm run dev
 
 Frontend runs on:
 ```
-http://localhost:5173
-```
+https://hyper-local-skill-and-service-exchange.onrender.com/```
 
 ---
 
