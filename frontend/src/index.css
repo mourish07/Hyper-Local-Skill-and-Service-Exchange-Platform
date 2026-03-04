@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+    --color-midnight-50: #f8fafc;
+    --color-midnight-100: #f1f5f9;
+    --color-midnight-200: #e2e8f0;
+    --color-midnight-300: #cbd5e1;
+    --color-midnight-400: #94a3b8;
+    --color-midnight-500: #64748b;
+    --color-midnight-600: #475569;
+    --color-midnight-700: #334155;
+    --color-midnight-800: #1e293b;
+    --color-midnight-900: #0f172a;
+    --color-midnight-950: #020617;
+
+    --color-accent: #8b5cf6;
+    --color-accent-hover: #7c3aed;
+    --color-vibrant-cyan: #06b6d4;
+    --color-vibrant-pink: #ec4899;
+    --color-vibrant-neon: #10b981;
+
+    --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3);
+    --shadow-vibrant: 0 0 20px rgba(139, 92, 246, 0.3);
+    --shadow-vibrant-hover: 0 0 30px rgba(139, 92, 246, 0.5);
+
+    --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --animate-float: float 6s ease-in-out infinite;
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-midnight-950 text-slate-200 antialiased selection:bg-accent/40 selection:text-white;
+    }
+}
+
+@layer components {
+    .glass-card {
+        @apply bg-midnight-900/40 backdrop-blur-2xl border border-white/10 shadow-glass transition-all duration-500;
+    }
+
+    .glass-card-vibrant {
+        @apply bg-midnight-900/40 backdrop-blur-2xl transition-all duration-500 border-accent/20 shadow-glass hover:border-accent/50 hover:shadow-accent/20;
+    }
+
+    .btn-vibrant {
+        @apply relative overflow-hidden bg-gradient-to-r from-accent to-vibrant-cyan text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-vibrant hover:shadow-vibrant-hover;
+    }
+
+    .input-field {
+        @apply w-full px-4 py-3 bg-midnight-800/40 border border-white/5 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent transition-all duration-300 placeholder:text-slate-500 text-slate-100 backdrop-blur-md;
+    }
+}
